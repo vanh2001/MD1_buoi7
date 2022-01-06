@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
 </head>
 <body>
-$END$
+<label for="number" >Amount</label> <br>
+<input type="number" id="number">
+<br>
+<label >From Currency</label> <br>
+<!--xét tỷ lệ lấy VietNam làm chuẩn rồi chia cho các giá trị phía sau-->
+<select id="fromCurrency">
+    <option value="1">VietNam</option>
+    <option value="0.000043">USD</option>
+    <option value="0.000029">EUR</option>
+</select>
+<br>
+<label id="to">To Currency</label> <br>
+<select  id="toCurrency">
+    <option value="1">VietNam</option>
+    <option value="0.000043">USD</option>
+    <option value="0.000029">EUR</option>
+</select>
+<br>
+<input type="button" value="Convert" onclick="chuyenDoiTien1()">
+<br>
+<p id="result" style="color: blue"></p>
+
+<script src="bai4_cachTyLe.js"></script>
 </body>
 </html>
