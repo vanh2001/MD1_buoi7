@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!--<form>-->
+    <label for="number" >Amount</label> <br>
+    <input type="number" id="number">
+    <br>
+    <label >From Currency</label> <br>
+    <select id="fromCurrency">
+        <option value="VietNam">VietNam</option>
+        <option value="USD">USD</option>
+    </select>
+    <br>
+    <label id="to">To Currency</label> <br>
+    <select  id="toCurrency">
+        <option value="USD">USD</option>
+        <option value="VietNam">Vietnam</option>
+    </select>
+    <br>
+    <input type="button" value="Convert" onclick="chuyenDoiTien()">
+    <br>
+    <p id="result" style="color: blue"></p>
+<!--</form>-->
+
+<script src="bai4.js"></script>
 </body>
 </html>
